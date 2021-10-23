@@ -1,0 +1,44 @@
+@font-face {
+  font-family: mizanSemiBold;
+  src: url(../fonts/Mizan.otf);
+}
+
+@font-face {
+  font-family: mitra;
+  src: url(../fonts/Mitra.ttf);
+}
+
+@font-face {
+  font-family: adobeShinStout;
+  src: url(../fonts/AdobeShin/AdobeShinStouts.ttf);
+}
+
+@font-face {
+  font-family: adobeShinTypo;
+  src: url(../fonts/AdobeShin/AdobeArabicShin.ttf);
+}
+
+@font-face {
+  font-family: adobeArabic;
+  src: url(../fonts/AdobeArabic/AdobeArabic-Regular.otf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: adobeArabic;
+  src: url(../fonts/AdobeArabic/AdobeArabic-Italic.otf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: adobeArabic;
+  src: url(../fonts/AdobeArabic/AdobeArabic-Bold.otf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: adobeArabic;
+  src: url(../fonts/AdobeArabic/AdobeArabic-BoldItalic.otf);
+  font-style: italic;
+  font-weight: bold;
+}
