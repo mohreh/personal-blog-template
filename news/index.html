@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/news/index.css" />
     <title>اخبار - ابوالحسن حسنی</title>
+
+    <!-- این فایل اسکریپت رو خودت پاک کن مربوط به همون ایپورت کردنه -->
+    <script src="../include-html.js"></script>
   </head>
   <body>
+    <div id="sidebar" include-html="../sidebar.html"></div>
+
     <div class="content-wrapper">
       <h3 class="text-primary text-shin-stout">اخبار</h3>
 
@@ -130,4 +135,37 @@
       <p class="load-more">بیشتر +</p>
     </div>
   </body>
+
+  <script>
+    includeHTML();
+
+    // لعنت بر گشادی جای اینکه چهار تا دیو از سایدبار کپی کنم فقط جای کلاس‌هارو عوض کنم این کارو کردم
+    // اینو حذف نکن اگه کردی یادت نره خودت این کلاس‌ها رو بدی به اون انکری که لازمه
+    const sidebar = document.getElementById('sidebar');
+
+    (async () => {
+      await new Promise((res) => {
+        setTimeout(() => {
+          const menu = sidebar.querySelector('.menu');
+
+          for (let a in menu.children) {
+            let elm = menu.children[a];
+            if (elm instanceof HTMLAnchorElement) {
+              const elmHref = elm.getAttribute('href');
+
+              if (window.location.pathname.includes(elmHref)) {
+                if (elmHref !== '/') {
+                  elm.classList.add(
+                    'text-shin-stout',
+                    'text-primary',
+                    'underline'
+                  );
+                }
+              }
+            }
+          }
+        }, 200);
+      });
+    })();
+  </script>
 </html>

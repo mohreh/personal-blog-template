@@ -1,0 +1,26 @@
+#sidebar {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  right: 0;
+  height: 100%;
+  background-color: var(--white-menu-color);
+  width: 150px;
+  padding: 1rem 2rem;
+  z-index: 100;
+  box-shadow: -2px 0 10px rgb(0, 0, 0, 0.2);
+  transition: ease-in-out width 0.5s;
+}
+
+.menu {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu a {
+  font-size: 22px;
+  padding: 1rem 0;
+  font-family: adobeShinTypo;
+}
