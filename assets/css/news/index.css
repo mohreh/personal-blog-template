@@ -1,0 +1,61 @@
+@import url(../_.css);
+
+.content-wrapper {
+  margin-top: 4vh;
+  padding-bottom: 4vh;
+  width: calc(100vw - 150px);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h3 {
+  padding: 2rem calc(12vw + 5rem) 0.5rem 0;
+}
+
+.load-more {
+  font-size: 1.4rem;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.news {
+  margin: 20px 0 25px 0;
+
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.news div {
+  padding-top: 2rem;
+}
+
+.news p.date,
+.news .text {
+  display: inline-block;
+}
+
+.news p.date,
+.news .text::after {
+  width: 100%;
+  clear: both;
+  content: '';
+}
+
+.news p.date {
+  text-align: left;
+  position: relative;
+  right: 12vw;
+  width: auto;
+  top: 1px;
+}
+
+.news .text {
+  position: absolute;
+  right: calc(12vw + 5rem);
+}
+
+.news p.date {
+  font-size: 0.8rem;
+  color: rgb(0, 0, 0, 0.5);
+}
