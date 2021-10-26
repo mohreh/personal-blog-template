@@ -1,6 +1,6 @@
 @import url(./_.css);
 
-#essays-container {
+#papers-container {
   margin-top: 10.5vh;
   padding-right: 10vw;
   position: relative;
@@ -45,7 +45,7 @@
   background-color: var(--pale-color);
 }
 
-.essay-article {
+.paper-article {
   white-space: normal;
   padding-left: 2rem;
   width: 22rem;
@@ -54,7 +54,7 @@
   overflow: hidden;
 }
 
-.essay-article:last-child {
+.paper-article:last-child {
   width: calc(22rem + 10vw);
   padding-left: 10vw;
 }
@@ -270,7 +270,7 @@
   right: calc(100vw - 5.5rem);
 }
 
-.essay-image {
+.paper-image {
   margin: 0.5rem 0;
   max-width: 100%;
   background-repeat: no-repeat;
@@ -332,7 +332,7 @@ p {
   margin-left: 2rem;
 }
 
-#essays-container .wrapper:last-child .details-end {
+#papers-container .wrapper:last-child .details-end {
   margin-left: 9rem;
 }
 
