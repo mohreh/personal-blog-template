@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <title></title>
-  </head>
 
+    <script src="./include-html.js"></script>
+  </head>
   <body>
     <div id="view">
+      <div include-html="./topbar.html"></div>
+
       <div class="container">
         <div class="content-wrapper">
           <!-- بخش مقالات -->
@@ -1823,6 +1826,10 @@
       </div>
     </div>
 
+    <script>
+      includeHTML();
+    </script>
     <script src="./box-scroll.js"></script>
+    <script src="./search.js"></script>
   </body>
 </html>
