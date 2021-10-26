@@ -365,14 +365,14 @@ book-template {
   overflow-x: hidden;
 }
 
-topic-suggest {
+.topic-suggest {
   flex: 0 0 auto;
   margin: 1rem 1.5rem 0.5rem 1.5rem;
   width: 20rem;
   overflow: hidden;
 }
 
-topic-suggest:first-child {
+.topic-suggest:first-child {
   margin-right: 0;
 }
 
@@ -546,4 +546,8 @@ button {
 
 .lead {
   font-size: 1.18rem;
+}
+
+span {
+  padding: 0 0.2rem;
 }

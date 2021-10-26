@@ -136,7 +136,47 @@
           ﻓﻘﻂ ﺩﺯﺩﯼ نکن !
         </p>
       </div>
-      <insert-comment></insert-comment>
+      <div class="insert-comment">
+        <div>
+          <div class="title">
+            <h5>درج دیدگاه</h5>
+          </div>
+          <form action="">
+            <div class="information">
+              <label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="نام خود را بنویسید"
+                />
+              </label>
+              <label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="ایمیل خود را وارد کنید"
+                />
+              </label>
+            </div>
+
+            <div class="message">
+              <label>
+                <textarea
+                  name="text"
+                  id="comment"
+                  max-length="600"
+                  placeholder="دیدگاه"
+                ></textarea>
+                <p></p>
+              </label>
+            </div>
+
+            <input type="submit" value="ارسال دیدگاه" />
+          </form>
+        </div>
+      </div>
       <div class="comments-count">
         <h5>۴ دیدگاه</h5>
       </div>
@@ -408,4 +448,6 @@
   <script>
     includeHTML();
   </script>
+
+  <script src="../bar-highlight.js"></script>
 </html>
