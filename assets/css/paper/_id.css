@@ -1,0 +1,134 @@
+@import url(../_.css);
+@import url(../sidebar.css);
+
+.content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 150px);
+  padding: 0 20%;
+}
+
+.tract-image {
+  margin: 0.5rem 0;
+  width: 100%;
+  height: 470px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 2rem;
+  width: 60%;
+  text-align: center;
+  margin: 8rem auto;
+  padding-top: 1.5rem;
+}
+
+.crumbs {
+  margin-bottom: 2.4rem;
+  font-size: 1.2rem;
+}
+
+.crumbs > * {
+  display: inline;
+  margin-left: 4rem;
+}
+
+.topics > * {
+  color: var(--pale-color);
+  margin-left: 0.8rem;
+}
+
+.text-container > * {
+  font-size: 1.6rem;
+  margin-bottom: 1.7rem;
+  text-align: justify;
+  line-height: 2.2rem;
+}
+
+.previous-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  margin: 3rem;
+}
+
+.previous-page p {
+  margin-left: 0.5rem;
+  font-family: adobeShinStout;
+  font-size: 1.9rem;
+
+  color: var(--primary-color);
+}
+
+.previous-page svg {
+  margin-top: 0.7rem;
+}
+
+commetns-section {
+  width: 100%;
+}
+
+.comments-count {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  font-size: 28px;
+  position: relative;
+  background-color: var(--background-color);
+}
+
+.comments-count:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #555;
+  opacity: 0.7;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  top: 30%;
+  z-index: 1;
+}
+
+h5 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  background-color: var(--background-color);
+  width: auto;
+  display: inline-block;
+  z-index: 3;
+  padding: 0 10px 0 10px;
+  position: relative;
+  margin: 0 50px 0 0;
+}
+
+.compatible {
+  width: 40%;
+  border-right: 3px #666 solid;
+  padding: 0.5rem;
+  background-color: var(--white-menu-color);
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+  position: relative;
+  font-style: italic;
+}
+
+.compatible-left {
+  left: -4rem;
+  float: left;
+}
+
+.compatible-right {
+  right: -4rem;
+  float: right;
+}
+
+.compatible ~ p {
+  width: auto;
+}
