@@ -5,7 +5,7 @@
   right: 0;
   height: 100%;
   background-color: var(--white-menu-color);
-  width: 150px;
+  width: 140px;
   padding: 1rem 2rem;
   z-index: 100;
   box-shadow: -2px 0 10px rgb(0, 0, 0, 0.2);

@@ -1,0 +1,126 @@
+@import url(../_.css);
+@import url(../sidebar.css);
+
+.content-wrapper {
+  scroll-behavior: smooth;
+  padding: 0rem 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-height: 100vh;
+  width: calc(100vw - 150px);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.load-more {
+  font-size: 1.5rem;
+  opacity: 0.7;
+  text-overflow: ellipsis;
+  white-space: pre;
+  align-self: center;
+  justify-self: center;
+  padding: 1.5rem;
+  padding-top: 6rem;
+  transform: rotate(-90deg);
+}
+
+svg {
+  padding: 10px 13px 10px 10px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 9px 1px rgb(0, 0, 0, 0.2);
+  background-color: #f6eedf;
+  position: fixed;
+  bottom: 45%;
+}
+
+svg.toRight {
+  right: calc(2.5rem + 120px);
+  transform: rotate(180deg);
+}
+
+svg.toLeft {
+  left: 2.5rem;
+}
+
+.paper-image {
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.paper-article {
+  white-space: normal;
+  padding-left: 2rem;
+  width: 22rem;
+  flex: 0 0 auto;
+  text-align: justify;
+  overflow: hidden;
+}
+
+.paper-article:last-child {
+  width: calc(22rem + 10vw);
+  padding-left: 10vw;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  width: inherit;
+  opacity: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.details-start {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.details-end {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: 2rem;
+}
+
+.paper-article:last-child .details-end {
+  margin-left: 9rem;
+}
+
+.details-end > div {
+  padding-top: 3px;
+}
+
+.details-end > div,
+.details-start {
+  margin-top: 4px;
+}
+
+h4 {
+  font-size: 1.42rem;
+  margin-top: 0.6rem !important;
+  transition: color 0.2s ease;
+}
+
+h4:hover {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+p {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  text-align: justify;
+}
