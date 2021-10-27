@@ -341,6 +341,10 @@ p {
   margin-left: 10.1rem;
 }
 
+.note-article > a:hover {
+  color: inherit;
+}
+
 .details-end > div {
   padding-top: 3px;
   opacity: 50%;
