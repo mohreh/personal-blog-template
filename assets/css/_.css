@@ -221,3 +221,7 @@ button {
 span {
   padding: 0 0.2rem;
 }
+
+.note-article > a:hover {
+  color: inherit;
+}

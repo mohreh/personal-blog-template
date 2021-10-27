@@ -48,6 +48,7 @@
         const { index, x, offsetWidth } = firstNonVisible;
         toRight.addEventListener('click', () => {
           box.scrollLeft += offsetWidth * index;
+          console.log(box);
         });
 
         toLeft.addEventListener('click', () => {
