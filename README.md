@@ -1,1 +1,1 @@
-ipen index.html in your favorite browser
+open index.html in your favorite browser
